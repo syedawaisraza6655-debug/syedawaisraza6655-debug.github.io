@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<title>ShortEarn — AmazingCreating</title>
+<style>
+:root{--bg:#080d1b;--panel:#111a2d;--panel2:#17223a;--line:#293754;--text:#f8fafc;--muted:#9eabc3;--purple:#8b5cf6;--cyan:#22d3ee;--green:#22c55e;--danger:#ef4444}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -10%,#31235f 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+button,input{font:inherit}.app{max-width:1180px;margin:auto;padding:18px}.top{position:sticky;top:0;z-index:50;background:#080d1bdd;backdrop-filter:blur(18px);border-bottom:1px solid #202b43;margin:-18px -18px 20px;padding:13px 18px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{font-size:1.35rem;font-weight:900}.brand b{color:#a78bfa}.nav-right{display:flex;align-items:center;gap:8px}.login-top,.btn{border:0;border-radius:11px;padding:11px 15px;font-weight:800;cursor:pointer;color:#fff;background:linear-gradient(90deg,var(--purple),#6366f1);text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.login-top{padding:8px 13px;font-size:.82rem}.pill{padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:#cbd5e1;font-size:.76rem}
+.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0}.tab{background:#121c31;color:#b9c4d8;border:1px solid var(--line);padding:11px 7px;border-radius:10px;font-weight:750;cursor:pointer}.tab.active{background:linear-gradient(90deg,#7c3aed,#4f46e5);color:#fff;border-color:#7656d7}
+.page{display:none}.page.active{display:block}.hero{padding:34px 0 20px}.eyebrow{font-size:.75rem;letter-spacing:1.7px;color:#67e8f9;font-weight:850}.hero h1{font-size:clamp(2.25rem,6vw,4.4rem);line-height:1.02;margin:10px 0}.gradient{background:linear-gradient(90deg,#c4b5fd,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:700px;color:var(--muted);line-height:1.7}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn.secondary{background:#202d48;border:1px solid #394a6b}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid2{display:grid;grid-template-columns:1.35fr .65fr;gap:16px}.card{background:linear-gradient(145deg,rgba(22,33,57,.97),rgba(12,20,36,.98));border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 14px 40px #00000025}.balance{background:linear-gradient(120deg,#32235f,#172b48);border-color:#6d5bc0}.label{font-size:.78rem;color:var(--muted)}.amount{font-size:2.15rem;font-weight:900;margin:7px 0}.note{color:var(--muted);font-size:.84rem;line-height:1.55}.section-title{margin:28px 0 13px;font-size:1.35rem}.video{overflow:hidden}.thumb{aspect-ratio:16/9;border-radius:12px;background:linear-gradient(135deg,#33236d,#16435a);display:grid;place-items:center;position:relative}.thumb img{width:100%;height:100%;object-fit:cover;border-radius:12px}.play{position:absolute;width:56px;height:56px;border-radius:50%;background:#fff;color:#251b43;display:grid;place-items:center;font-size:1.35rem;box-shadow:0 5px 25px #0007}.video h3{margin:14px 0 6px}.video .btn{width:100%;margin-top:8px}.notice{border-color:#63502c;background:#282316;color:#f5e6b4}.methods{display:grid;gap:9px;margin:14px 0}.methods label{background:#1b2943;border:1px solid #354664;border-radius:10px;padding:12px}.field{width:100%;background:#0b1324;border:1px solid #354563;color:#fff;border-radius:10px;padding:12px;margin:5px 0 10px;outline:none}.field:focus{border-color:#8b5cf6}.modal{position:fixed;inset:0;background:#0009;z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-box{width:min(390px,100%);background:#111a2d;border:1px solid #364766;border-radius:18px;padding:20px;position:relative;box-shadow:0 25px 80px #0008}.close{position:absolute;right:12px;top:9px;background:none;border:0;color:#fff;font-size:25px;cursor:pointer}.social{display:grid;grid-template-columns:1fr 1fr;gap:9px}.social button{border-radius:10px;padding:11px;border:1px solid #40506c;background:#202d48;color:#fff;font-weight:800;cursor:pointer}.social .google{background:#fff;color:#202124}.divider{display:flex;align-items:center;gap:9px;color:#71809a;font-size:.72rem;margin:14px 0}.divider:before,.divider:after{content:"";height:1px;background:#293754;flex:1}.toast{position:fixed;right:18px;bottom:18px;background:#17233b;border:1px solid #40516e;padding:13px 16px;border-radius:12px;z-index:200;display:none;box-shadow:0 10px 30px #0006}.toast.show{display:block}.wheel{width:min(270px,75vw);aspect-ratio:1;border-radius:50%;margin:20px auto;border:8px solid #dbeafe;background:conic-gradient(#fbbf24 0 90deg,#7c3aed 90deg 180deg,#fbbf24 180deg 270deg,#7c3aed 270deg);display:grid;place-items:center;transition:transform 4s cubic-bezier(.12,.78,.12,1);box-shadow:0 0 0 5px #4c3c91,0 15px 35px #0007}.wheel span{background:#fff;color:#251b43;padding:10px;border-radius:50%;font-weight:900}.footer{text-align:center;color:#71809a;font-size:.75rem;padding:30px 0}
+@media(max-width:760px){.app{padding:12px}.top{margin:-12px -12px 14px;padding:11px 12px}.pill{display:none}.tabs{grid-template-columns:repeat(3,1fr)}.grid,.grid2{grid-template-columns:1fr}.hero{padding-top:22px}.hero h1{font-size:2.6rem}.actions .btn{width:100%}.social{grid-template-columns:1fr}.nav-right{gap:5px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="nav">
+<div class="brand">▶ <b>Short</b>Earn</div>
+<div class="nav-right"><button class="login-top" id="topLogin">Login</button><span class="pill">AmazingCreating</span></div>
+</div></header>
+
+<nav class="tabs">
+<button class="tab active" data-page="dashboard">Dashboard</button>
+<button class="tab" data-page="withdraw">Withdraw</button>
+<button class="tab" data-page="shorts">Shorts</button>
+<button class="tab" data-page="daily">Daily Reward</button>
+<button class="tab" data-page="about">About</button>
+</nav>
+
+<section id="dashboard" class="page active">
+<div class="grid2">
+<div class="hero">
+<div class="eyebrow">AMAZINGCREATING • SHORTEARN V2</div>
+<h1>Watch. Explore.<br><span class="gradient">Earn rewards.</span></h1>
+<p>Discover fresh AmazingCreating Shorts, manage your wallet and claim eligible daily rewards from one clean dashboard.</p>
+<div class="actions"><a class="btn" href="https://www.youtube.com/@AmazingCreating" target="_blank">Visit YouTube ↗</a><button class="btn secondary" onclick="openLogin()">Login / Register</button></div>
+</div>
+<div class="card balance"><div class="label">MY BALANCE</div><div class="amount" id="balance">Rs. 0.00</div><div class="note">Available wallet balance</div><hr style="border:0;border-top:1px solid #ffffff18;margin:18px 0"><div class="label">ACCOUNT</div><div id="accountStatus" class="note">Not logged in</div></div>
+</div>
+<h2 class="section-title">Quick Stats</h2>
+<div class="grid">
+<div class="card"><div class="label">View rate</div><div class="amount">Rs. 12</div><div class="note">Displayed rate</div></div>
+<div class="card"><div class="label">Subscribe rate</div><div class="amount">Rs. 100</div><div class="note">Displayed rate</div></div>
+<div class="card"><div class="label">Daily check-in</div><div class="amount">Rs. 2</div><div class="note">One eligible claim per day</div></div>
+</div>
+<h2 class="section-title">How it works</h2>
+<div class="grid">
+<div class="card"><b>01 — Login</b><p class="note">Create or access your ShortEarn account.</p></div>
+<div class="card"><b>02 — Explore Shorts</b><p class="note">Open featured videos directly on YouTube.</p></div>
+<div class="card"><b>03 — Rewards</b><p class="note">Use eligible daily rewards and manage your wallet.</p></div>
+</div>
+<div class="card notice" style="margin-top:16px"><b>Important:</b> Wallet and withdrawal features depend on the connected backend. YouTube views/subscriptions are not automatically verified or rewarded by this demo.</div>
+</section>
+
+<section id="shorts" class="page">
+<h2 class="section-title">Featured Shorts</h2>
+<div class="grid">
+<div class="card video"><div class="thumb"><img src="https://i.ytimg.com/vi/jBOd8z6uDBY/hqdefault.jpg" alt=""><div class="play">▶</div></div><h3>Short Video 1</h3><p class="note">Watch this Short on YouTube.</p><a class="btn" href="https://youtube.com/shorts/jBOd8z6uDBY" target="_blank">Watch ↗</a></div>
+<div class="card video"><div class="thumb"><img src="https://i.ytimg.com/vi/Fqi51BwIu6c/hqdefault.jpg" alt=""><div class="play">▶</div></div><h3>Short Video 2</h3><p class="note">Watch this Short on YouTube.</p><a class="btn" href="https://youtube.com/shorts/Fqi51BwIu6c" target="_blank">Watch ↗</a></div>
+<div class="card video"><div class="thumb"><img src="https://i.ytimg.com/vi/nqG_FWnnt5g/hqdefault.jpg" alt=""><div class="play">▶</div></div><h3>Short Video 3</h3><p class="note">Watch this Short on YouTube.</p><a class="btn" href="https://youtube.com/shorts/nqG_FWnnt5g" target="_blank">Watch ↗</a></div>
+</div>
+</section>
+
+<section id="withdraw" class="page">
+<h2 class="section-title">Withdraw</h2>
+<div class="card">
+<div class="amount">Minimum: Rs. 200</div><p class="note">Withdrawal requests are sent to the backend for admin review.</p>
+<div class="methods"><label><input type="radio" name="method" value="Easypaisa"> Easypaisa</label><label><input type="radio" name="method" value="JazzCash"> JazzCash</label><label><input type="radio" name="method" value="Bank Transfer"> Bank Transfer</label></div>
+<label class="label">Account / mobile number</label><input id="account" class="field" placeholder="03xxxxxxxxx">
+<label class="label">Amount (Rs.)</label><input id="withdrawAmount" class="field" type="number" min="1" placeholder="200">
+<button class="btn" id="withdrawBtn" style="width:100%">Submit Withdrawal</button>
+</div>
+</section>
+
+<section id="daily" class="page">
+<h2 class="section-title">Daily Rewards</h2>
+<div class="grid2">
+<div class="card"><div class="eyebrow">DAILY CHECK-IN</div><h2>Claim Rs. 2</h2><p class="note">Claim once per eligible day.</p><button class="btn" id="dailyBtn" style="width:100%">Claim Rs. 2</button><p id="dailyMsg" class="note"></p></div>
+<div class="card" style="text-align:center"><div class="eyebrow">FREE DAILY SPIN</div><h2>Try your luck</h2><div class="wheel" id="wheel"><span>SPIN</span></div><button class="btn" id="spinBtn" style="width:100%">🎡 Spin</button><p id="spinMsg" class="note"></p></div>
+</div>
+</section>
+
+<section id="about" class="page">
+<h2 class="section-title">About ShortEarn</h2>
+<div class="card"><h2>ShortEarn</h2><p class="note">ShortEarn is a reward-style web application connected with AmazingCreating content. This V2 interface is optimized for desktop and mobile.</p><p class="note">Support: syedawaisraza248@gmail.com</p><a class="btn" href="https://www.youtube.com/@AmazingCreating" target="_blank">AmazingCreating ↗</a></div>
+</section>
+
+<footer class="footer">© 2026 ShortEarn • AmazingCreating</footer>
+</div>
+
+<div class="modal" id="loginModal">
+<div class="modal-box">
+<button class="close" onclick="closeLogin()">×</button><h2>Welcome to ShortEarn</h2>
+<div class="social"><button class="google" onclick="social('google')">G&nbsp; Google</button><button onclick="social('facebook')">f&nbsp; Facebook</button></div>
+<div class="divider">OR EMAIL</div>
+<input class="field" id="email" type="email" placeholder="Email">
+<input class="field" id="password" type="password" placeholder="Password">
+<button class="btn" id="loginBtn" style="width:100%;margin-top:5px">Login</button>
+<button class="btn secondary" id="registerBtn" style="width:100%;margin-top:8px">Create account</button>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const API = location.protocol === 'file:' ? 'http://localhost:3000/api' : '/api';
+let token=localStorage.getItem('shortEarnToken'), balance=0;
+const $=id=>document.getElementById(id);
+function toast(m){$('toast').textContent=m;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2800)}
+function openLogin(){$('loginModal').classList.add('show')}
+function closeLogin(){$('loginModal').classList.remove('show')}
+$('topLogin').onclick=openLogin;
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===b.dataset.page));scrollTo(0,0)});
+async function api(path,opt={}){const h={'Content-Type':'application/json',...(opt.headers||{})};if(token)h.Authorization='Bearer '+token;const r=await fetch(API+path,{...opt,headers:h});const d=await r.json().catch(()=>({}));if(!r.ok)throw Error(d.error||'Request failed');return d}
+function showBalance(){ $('balance').textContent='Rs. '+Number(balance).toFixed(2)}
+async function login(){try{const d=await api('/auth/login',{method:'POST',body:JSON.stringify({email:$('email').value.trim(),password:$('password').value})});token=d.token;localStorage.setItem('shortEarnToken',token);closeLogin();await sync();toast('Logged in successfully')}catch(e){toast(e.message)}}
+async function register(){const name=prompt('Your name:');if(!name)return;try{const d=await api('/auth/register',{method:'POST',body:JSON.stringify({name,email:$('email').value.trim(),password:$('password').value})});token=d.token;localStorage.setItem('shortEarnToken',token);closeLogin();await sync();toast('Account created')}catch(e){toast(e.message)}}
+async function sync(){if(!token){showBalance();$('accountStatus').textContent='Not logged in';return}try{const [u,w]=await Promise.all([api('/me'),api('/wallet')]);balance=Number(w.balance);showBalance();$('accountStatus').textContent=u.name+' • '+u.email}catch(e){logout()}}
+function logout(){token=null;localStorage.removeItem('shortEarnToken');balance=0;showBalance();$('accountStatus').textContent='Not logged in'}
+$('loginBtn').onclick=login;$('registerBtn').onclick=register;
+function social(p){location.href=API+'/auth/'+p}
+$('dailyBtn').onclick=async()=>{if(!token)return openLogin();$('dailyBtn').disabled=true;try{const r=await api('/rewards/daily',{method:'POST'});balance=Number(r.balance);showBalance();$('dailyMsg').textContent='Rs. 2 added to your wallet.';toast('Daily reward claimed')}catch(e){$('dailyMsg').textContent=e.message;$('dailyBtn').disabled=false}};
+$('spinBtn').onclick=async()=>{if(!token)return openLogin();$('spinBtn').disabled=true;$('wheel').style.transform='rotate(1875deg)';try{const r=await api('/rewards/spin',{method:'POST'});setTimeout(()=>{balance=Number(r.balance);showBalance();$('spinMsg').textContent='You won Rs. '+Number(r.prize).toFixed(2)+'!';$('spinBtn').textContent='Daily spin used'},4100)}catch(e){$('spinMsg').textContent=e.message;$('spinBtn').disabled=false;$('wheel').style.transform='none'}};
+$('withdrawBtn').onclick=async()=>{if(!token)return openLogin();const method=document.querySelector('input[name=method]:checked')?.value,account=$('account').value.trim(),amount=Number($('withdrawAmount').value);if(!method||!account||!amount)return toast('Please complete all fields');try{const r=await api('/withdrawals',{method:'POST',body:JSON.stringify({method,account,amount})});balance=Number(r.balance);showBalance();toast('Withdrawal request submitted');$('withdrawAmount').value=''}catch(e){toast(e.message)}};
+showBalance();sync();
+</script>
+</body>
+</html>
